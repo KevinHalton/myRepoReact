@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+
+nav,
+main {
+  max-width: 550px;
+  margin: 0 auto;
+  padding-inline: 1.6em;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  height: 91px;
+  background-color: #21222A;
+}
+
+.logo {
+  width: 10%;
+}
+
+.react-facts {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+}
+
+h4 {
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+main {
+  height: calc(100vh - 91px);
+  background-color: #282D35;
+  padding-top: 3.5em;
+  background-image: url(./assets/react-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 60%;
+}
+
+h1 {
+  font-size: 2.3rem;
+  letter-spacing: -0.05em;
+}
+
+ul {
+  margin-top: 2em;
+}
+
+ul>li {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+  padding-right: 1em;
+}
+
+ul>li::marker {
+  color: #61DAFB;
+  font-size: 1.3em;
+}
